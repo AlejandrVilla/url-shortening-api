@@ -1,0 +1,15 @@
+@use "@sass/variables/color.scss" as color;
+@use "@sass/variables/layout.scss" as layout;
+@use "@sass/variables/typography.scss" as typography;
+
+@forward "@sass/variables/color.scss";
+@forward "@sass/variables/layout.scss";
+@forward "@sass/variables/typography.scss";
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}

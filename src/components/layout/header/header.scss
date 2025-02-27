@@ -1,0 +1,105 @@
+@use "@sass/base.scss" as base;
+
+.header{
+    background-color: base.$White;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 25px 100px 25px 100px;
+    font-size: base.$p-haeder-size;
+    color: base.$Grayish-Violet;
+
+    @media (width <= 900px){
+        justify-content: space-between;
+        padding: 30px 20px 30px 20px;
+    }
+}
+
+.header p{
+    cursor: pointer;
+    transition: color ease 1s, background-color ease 1s;
+
+    @media (width <= 900px){
+        color: base.$White;
+    }
+}
+
+.header-feature:hover, .header-pricing:hover, .header-resources:hover, .header-login:hover{
+    color: base.$Black;
+}
+
+.header-nav-access{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (width <= 900px){
+        position: fixed;
+        z-index: 1;
+        top: 80px;
+        width: 325px;
+        flex-direction: column;
+        background-color: base.$Dark-Violet;
+        border-radius: 10px;
+    }
+}
+
+.header-nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+
+    @media (width <= 900px){
+        width: 275px;
+        flex-direction: column;
+        border-bottom: 1px solid base.$Grayish-Violet;
+        gap: 30px;
+        padding: 30px 0 30px 0;
+    }
+}
+
+.header-access{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+
+    @media (width <= 900px){
+        width: 275px;
+        flex-direction: column;
+        gap: 30px;
+        padding: 25px 0 25px 0;
+    }
+}
+
+.header-signup{
+    color: base.$White;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: base.$Cyan;
+    padding: 5px 20px 5px 20px;
+    border-radius: 15px;
+
+    @media (width <= 900px){
+        width: 100%;
+        padding: 10px 0 10px 0;
+        border-radius: 20px;
+    }
+}
+
+.header-signup:hover{
+    background-color: base.$Cyan-Light;
+    color: base.$White;
+
+    
+}
