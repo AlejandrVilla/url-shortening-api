@@ -1,5 +1,5 @@
-import logo from "/icons/logo.svg";
-import iconHamburger from "/icons/icon-hamburger.svg"
+import LogoSVG from "@assets/icons/logo.svg?react";
+import HamburgerSVG from "@assets/icons/icon-hamburger.svg?react"
 import { getWindowType, menuVariants } from "@/utils/utils";
 import { AnimatePresence, motion } from "framer-motion";
 import "./header.scss";
@@ -34,13 +34,12 @@ const Header = ({ menuIsActive, setMenuIsActive }) => {
 
     return (
         <div className="header poppins-medium">
-            <img className="header-logo" src={logo} alt="logo" />
+            <LogoSVG className="header-logo"/>
             {windowType === "phone" ? (
                 <>
-                    <img
+                    <HamburgerSVG
+                        className="hamburger-icon"
                         onClick={handleClick}
-                        src={iconHamburger}
-                        alt="icon hamburger"
                     />
                     <AnimatePresence mode="sync">
                         {menuIsActive && navBar}

@@ -1,0 +1,117 @@
+@use "@sass/base.scss" as base;
+
+.footer{
+    background-color: base.$Very-Dark-Violet;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 50px 150px 100px 150px;
+
+    @media (width <= 1200px){
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 150px 50px 150px;
+    }
+}
+
+.footer-logo{
+    width: 120px;
+    height: 31px;
+}
+
+.footer-logo path{
+    fill: base.$White;
+}
+
+.footer-content{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-between;
+    gap: 100px;
+
+    @media (width <= 1200px){
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+}
+
+.footer-info{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-between;
+    gap: 100px;
+
+    @media (width <= 1200px){
+        flex-direction: column;
+        align-items: center;
+        gap: 35px;
+    }
+}
+
+.footer-div{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    gap: 20px;
+
+    @media (width <= 1200px){
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.title{
+    color: base.$White;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    gap: 10px;
+    color: base.$Grayish-Violet;
+    font-size: base.$p-haeder-size;
+
+    @media (width <= 1200px){
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.content p{
+    cursor: pointer;
+    transition: color ease 1s;
+}
+
+.content p:hover{
+    color: base.$Cyan;
+}
+
+.footer-social{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.social-icon{
+    scale: 0.8;
+    cursor: pointer;
+}
+
+.social-icon path{
+    transition: fill ease 1s;
+}
+
+.social-icon path:hover{
+    fill: base.$Cyan;
+}
