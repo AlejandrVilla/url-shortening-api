@@ -1,0 +1,27 @@
+@use "@sass/base.scss" as base;
+
+.get-started-button{
+    color: base.$White;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: base.$Cyan;
+    padding: 10px 30px 10px 30px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color ease 1s;
+    font-size: base.$p-size-s;
+
+    @media (width <= 1100px){
+        width: 190px;
+        padding: 15px 0 15px 0;
+        border-radius: 30px;
+        font-size: base.$p-size-m;
+    }
+}
+
+.get-started-button:hover{
+    background-color: base.$Cyan-Light;
+    color: base.$White;
+}

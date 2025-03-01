@@ -8,7 +8,7 @@
     align-items: center;
     justify-content: center;
     gap: 50px;
-    padding: 25px 100px 25px 100px;
+    padding: 25px 150px 25px 150px;
     font-size: base.$p-haeder-size;
     color: base.$Grayish-Violet;
 
@@ -19,15 +19,21 @@
 }
 
 .header-logo{
+    scale: 0.8;
     width: 140px;
+    @media (width <= 900px){
+        scale: 1;
+    }
 }
 
 .header p{
+    font-size: base.$p-size-xs;
     cursor: pointer;
     transition: color ease 1s, background-color ease 1s;
 
     @media (width <= 900px){
         color: base.$White;
+        font-size: base.$p-size-l;
     }
 }
 
@@ -108,6 +114,4 @@
 .header-signup:hover{
     background-color: base.$Cyan-Light;
     color: base.$White;
-
-    
 }
