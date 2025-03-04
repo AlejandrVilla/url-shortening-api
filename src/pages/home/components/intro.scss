@@ -7,13 +7,13 @@
     justify-content: space-between;
     align-items: start; 
     gap: 50px;
-    padding: 50px 0 50px 150px;
+    padding: 50px 0 142px 150px;
     overflow: hidden;
 
-    @media(width <= 1100px){
+    @media(width <= 1200px){
         flex-direction: column-reverse;
         align-items: center;
-        padding: 0 0 50px 20px;
+        padding: 0 0 166px 20px;
         gap: 25px;
     }
 }
@@ -24,7 +24,7 @@
     align-items: start;
     justify-content: space-between;
     padding: 75px 0 0 0;
-    @media(width <= 1100px){
+    @media(width <= 1200px){
         padding: 0 0 0 0;
         align-items: center;
         gap: 10px;
@@ -36,7 +36,7 @@
     color: base.$Very-Dark-Blue;
     max-width: 700px;
     line-height: 70px;
-    @media(width <= 1100px){
+    @media(width <= 1200px){
         max-width: 300px;
         text-align: center;
         font-size: base.$h1-size-s;
@@ -49,7 +49,7 @@
     font-size: base.$p-size-m;
     color: base.$Grayish-Violet;
     line-height: 25px;
-    @media(width <= 1100px){
+    @media(width <= 1200px){
         max-width: 325px;
         text-align: center;
         font-size: base.$p-size-l;
@@ -59,20 +59,20 @@
 
 .get-started-button-div{
     margin: 25px 0 0 0;
-    @media(width <= 1100px){
+    @media(width <= 1200px){
         margin: 20px 0 0 0;
     }
 }
 
 .intro-image{
-    @media(width <= 1100px){
+    @media(width <= 1200px){
         width: 350px;
         height: 350px;
     }
 }
 
 .intro-image g path{
-    @media (width <= 1100px){
+    @media (width <= 1200px){
         scale: 0.7;
     }
 }

@@ -35,7 +35,7 @@ const Header = ({ menuIsActive, setMenuIsActive }) => {
     return (
         <div className="header poppins-medium">
             <LogoSVG className="header-logo"/>
-            {windowType === "phone" ? (
+            {windowType === "mobile" ? (
                 <>
                     <HamburgerSVG
                         className="hamburger-icon"

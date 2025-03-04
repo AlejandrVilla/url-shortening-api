@@ -1,14 +1,13 @@
 import Intro from "@pages/home/components/Intro";
+import ShorterLink from "@pages/home/components/ShorterLink";
+import "./home.scss";
 
 const Home = () => {
     return (
         <div className="home">
             <Intro/>
-
-            {/* Shorten a link here...
-
-            Shorten It!
-
+            <ShorterLink />
+            {/* 
             Advanced Statistics
 
             Track how your links are performing across the web with our

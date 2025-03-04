@@ -18,7 +18,7 @@ const menuVariants = {
 }
 
 const getWindowType = (width) => {
-    if (width <= 900 ) return "phone";
+    if (width <= 900 ) return "mobile";
     return "desktop";
 }
 
