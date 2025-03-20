@@ -1,0 +1,17 @@
+@use "@sass/base.scss" as base;
+
+.statistic-list{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: start;
+    justify-content: space-between;
+    position: relative;
+}
+
+.statistic-list hr{
+    position: absolute;
+    width: 100%;
+    border: 5px solid base.$Cyan;
+    top: 160px;
+}

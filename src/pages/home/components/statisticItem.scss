@@ -1,0 +1,47 @@
+@use "@sass/base.scss" as base;
+
+.statistic-item{
+    background-color: base.$White;
+    border-radius: 5px;
+    height: 250px;
+    width: 330px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    padding: 75px 30px 40px 30px;
+    position: relative;
+}
+
+.item-0{
+    top: 0px;
+}
+
+.item-1{
+    top: 50px;
+}
+
+.item-2{
+    top: 100px;
+}
+
+.statistic-item-image-div{
+    top: -45px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: base.$Dark-Violet;
+    border-radius: 50%;
+    padding: 20px;
+}
+
+.statistic-item-title{
+    color: base.$Very-Dark-Blue;
+}
+
+.statistic-item-description{
+    color: base.$Grayish-Violet;
+    font-size: base.$p-size-s;
+}
