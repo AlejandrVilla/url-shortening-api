@@ -1,5 +1,5 @@
 import Intro from "@pages/home/components/Intro";
-import { ShorterLink, Statistics } from "@pages/home/components/";
+import { ShorterLink, Statistics, Boost } from "@pages/home/components/";
 import "./home.scss";
 
 const Home = () => {
@@ -8,10 +8,7 @@ const Home = () => {
             <Intro />
             <ShorterLink />
             <Statistics />
-            {/* 
-            Boost your links today
-
-            Get Started */}
+            <Boost />
         </div>
     );
 }
