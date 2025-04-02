@@ -1,4 +1,4 @@
-import { statistics } from "@/utils/utils";
+import { statistics } from "@utils/";
 import StatisticItem from "@pages/home/components/StatisticItem";
 import StatisticList from "@pages/home/components/StatisticList";
 import "./statistic.scss";
