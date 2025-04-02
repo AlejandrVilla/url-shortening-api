@@ -1,0 +1,16 @@
+@use "@sass/base.scss" as base;
+
+.shorter-link-list{
+    width: 100%;
+    padding: 100px 0px 100px 0px;
+    background-color: base.$Light-Purple;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    justify-content: space-between;
+    @media(width <= 1200px){
+        padding: 125px 0px 75px 0px;
+        gap: 20px;
+    }
+}

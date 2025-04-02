@@ -1,0 +1,80 @@
+@use "@sass/base.scss" as base;
+
+.short-link-item{
+    width: 1140px;
+    font-size: base.$p-size-s;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: base.$White;
+    border-radius: 10px;
+    height: 60px;
+    padding: 5px 20px 5px 20px;
+
+    @media(width <= 1200px){
+        width: 315px;
+        flex-direction: column;
+        align-items: start;
+        height: 165px;
+        font-size: base.$p-size-m;
+        padding: 20px 20px 20px 20px;
+    }
+}
+
+.short-link-item p{
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.url{
+    width: 600px;
+    text-overflow: ellipsis;
+    @media(width <= 1200px){
+        width: 275px;
+    }
+}
+
+.short-url-div{
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    @media(width <= 1200px){
+        width: 100%;
+        flex-direction: column;
+        align-items: start;
+    }
+}
+
+.short-url{
+    color: base.$Cyan;
+    width: 230px;
+    text-overflow: ellipsis;
+    @media(width <= 1200px){
+        width: 275px;
+    }
+}
+
+.short-url-button{
+    width: 100px;
+    padding: 10px 20px 10px 20px;
+    background-color: base.$Cyan;
+    color: base.$White;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    @media(width <= 1200px){
+        width: 100%;
+    }
+}
+
+.short-url-button:hover{
+    background-color: base.$Cyan-Light;
+}
+
+.short-url-button.active{
+    background-color: base.$Very-Dark-Violet;
+}
