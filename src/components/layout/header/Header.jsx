@@ -1,5 +1,5 @@
 import LogoSVG from "@assets/icons/logo.svg?react";
-import HamburgerSVG from "@assets/icons/icon-hamburger.svg?react"
+import HamburgerSVG from "@assets/icons/icon-hamburger.svg?react";
 import { getWindowType, menuVariants } from "@utils/";
 import { AnimatePresence, motion } from "framer-motion";
 import "./header.scss";
