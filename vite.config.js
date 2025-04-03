@@ -5,7 +5,7 @@ import svgr from "vite-plugin-svgr";
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [svgr(), react()],
-  // base: "/url-shortening-api/",
+  base: "/url-shortening-api/",
   resolve: {
     alias: {
       "@": "/src",
