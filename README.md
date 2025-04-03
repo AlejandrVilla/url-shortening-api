@@ -47,6 +47,7 @@ This is a solution to the [Shortly URL shortening API Challenge challenge on Fro
 - [Fixing CORS Errors — How to Build a Proxy Server to Handle Cross-Origin Requests](https://jakemccambley.medium.com/fixing-cors-errors-when-working-with-3rd-party-apis-a69dc5474804)
 - [How to Import SVGs in a React and Vite app](https://www.freecodecamp.org/news/how-to-import-svgs-in-react-and-vite/)
 - [How to import SVG files as React Components in Vite App](https://medium.com/@praizjosh/how-to-import-svg-files-as-react-components-in-vite-97d6e1f2c046)
+- [Tiny Url instead Clean URI API](https://tinyurl.com/app/dev)
 
 ## Author
 
