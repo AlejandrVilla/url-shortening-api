@@ -15,7 +15,7 @@ const ShorterLink = ({ links, setLinks }) => {
         if (validLink) {
             const response = await handleApiCall(url);
             if (response.status === 200) {
-                const shortUrl = response.data.result_url;
+                const shortUrl = response.data.data.tiny_url;
                 setLinks([...links, { url: url, shortUrl: shortUrl }]);
             }
             else if (response.status === 400) {

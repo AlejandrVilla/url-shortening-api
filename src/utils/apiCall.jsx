@@ -1,4 +1,5 @@
 import axios from "axios";
+const TINY_URL_API_KEY = import.meta.env.VITE_TINY_URL_API_KEY
 
 const isValidUrl = (url) => {
     if (url.length > 0) return true;
@@ -6,15 +7,19 @@ const isValidUrl = (url) => {
 };
 
 const handleApiCall = async (link) => {
-    const API_URL = "https://cleanuri.com/api/v1/shorten";
-    const PROXY_URL = "https://thingproxy.freeboard.io/fetch/";
-    const body = `url=${link}`;
+    const API_URL = "https://api.tinyurl.com/create";
+    const API_KEY = TINY_URL_API_KEY;
+    const body = { url: link };
     try {
-        const response = await axios.post(`${PROXY_URL}${API_URL}`, body, {
-            headers: {
-                "Content-Type": "application/x-www-form-urlencoded",
+        const response = await axios.post(API_URL,
+            body,
+            {
+                headers: {
+                    Authorization: `Bearer ${API_KEY}`,
+                    "Content-Type": "application/json"
+                }
             }
-        });
+        );
         return response;
     } catch (error) {
         console.error("Error shortening the URL", error);
