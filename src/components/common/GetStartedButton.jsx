@@ -1,4 +1,4 @@
-import "./GetStartedButton.scss";
+import "./getStartedButton.scss";
 
 const GetStartedButton = () => {
     return(
