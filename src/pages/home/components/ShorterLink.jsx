@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { getWindowType, isValidUrl, handleApiCall } from "@utils/";
 import "./shorterLink.scss";
 
@@ -28,6 +28,10 @@ const ShorterLink = ({ links, setLinks }) => {
         color: !validUrl ? "red" : "black",
         border: !validUrl ? "2px solid red" : "2px solid black",
     }
+
+    useEffect(() => {
+        localStorage.setItem("links", JSON.stringify(links));
+    }, [links]);
 
     return (
         <form

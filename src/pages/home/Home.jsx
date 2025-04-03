@@ -5,8 +5,9 @@ import ShorterLinkList from "@pages/home/components/ShorterLinkList";
 import ShorterLinkItem from "@pages/home/components/ShorterLinkItem";
 import "./home.scss";
 
+const storedLinks = JSON.parse(localStorage.getItem("links"));
 const Home = () => {
-    const [links, setLinks] = useState([]);
+    const [links, setLinks] = useState(storedLinks || []);
 
     return (
         <div className="home">
